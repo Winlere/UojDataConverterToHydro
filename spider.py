@@ -98,6 +98,7 @@ def download(id_):
             download_problem(id_)
             return
         except PermissionError:
+            print("PermissionError.")
             pass
         except FileNotFoundError as e:
             print(e)
@@ -111,7 +112,7 @@ def download(id_):
 def main():
     global config
     headers['Cookie'] = f'UOJSESSID={input("Cookie: UOJSESSID=")}'
-    config=__import__(input('ConfigModule: '))
+    config=__import__('./authen.py')
     init()
     while True:
         opt = input('> ').split(' ')
