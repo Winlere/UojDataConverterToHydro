@@ -10,19 +10,21 @@
 
 ## 使用
 
-运行
+第一步安装依赖，运行
 
 ```
 pip install -r requirements.py
 ```
 
-修改authen.py的内容，具体定义见注释
+第二步修改authen.py的内容，具体定义见注释
 
+第三步运行spider, 根据提示输入管理员(需要是超级管理员&题目管理员)账号的cookie
 
-然后运行spider.py,输入cookie和.支持命令
 ```
 python spider.py 
 ```
+
+支持命令
 
 - all 下载所有题
 - ps [pids] 下载指定题号,多个题目id用空格分隔

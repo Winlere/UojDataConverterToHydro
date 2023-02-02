@@ -99,7 +99,7 @@ def download(id_):
             return
         except PermissionError:
             print("PermissionError.")
-            pass
+            break
         except FileNotFoundError as e:
             print(e)
             break
